@@ -1,0 +1,20 @@
+@use '../utilities/variables';
+.background{
+    background-image: url(../image/background.jpg);
+    height: 500px;
+    .hardwarestore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .nav-bg-color{
+            background: variables.$color-background;
+            .icono{
+                height: 300px;
+                .titulo{
+                    text-align: center;
+                    color: rgb(0, 255, 255);
+                }
+            }
+        }
+    }
+}
