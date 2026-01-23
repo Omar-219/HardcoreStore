@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--animacion-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -40,6 +42,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./accesorios.html">Accesorios</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">inicio</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -51,7 +56,7 @@
             <h2 class="bg-h2">Hardware</h2>
         </section>
         <section class="main-grid">
-            <div class="tarjeta">
+            <div class="tarjeta" data-aos="fade-up">
                 <img class="productos" src="../image/ryzen9.jpg" alt="Micro AMD Ryzen 9 9900X3D AM5">
                 <h3>Micro AMD Ryzen 9 9900X3D AM5</h3>
                 <ul>
@@ -64,9 +69,9 @@
                     <li>Caché L1 960 KB, Caché L2 12 MB, Caché L3 128 MB</li>
                     <li>TDP predeterminada 120W</li>
                 </ul>
-                <button>Agregar al carrito</button>
+                <button type="button" class="btn btn-gradient">Comprar</button>
             </div>
-            <div class="tarjeta">
+            <div class="tarjeta" data-aos="fade-down">
                 <img class="productos" src="../image/mother.jpg" alt="Mother Asus Crosshair Hero X870E AM5">
                 <h3>Mother Asus Crosshair Hero X870E AM5</h3>
                 <p> 
@@ -74,9 +79,9 @@
                     <br>La motherboard PRIME X870-P WIFI, que cuenta con un diseño de potencia robusto, soluciones de refrigeración completas y opciones de ajuste inteligente, 
                     <br>proporciona a los usuarios y a los constructores de PC DIY una serie de optimizaciones de rendimiento a través de funciones intuitivas de software y firmware.
                 </p>
-                <button>Agregar al carrito</button>
+                <button type="button" class="btn btn-gradient">Comprar</button>
             </div>
-            <div class="tarjeta">
+            <div class="tarjeta" data-aos="fade-up">
                 <img class="productos" src="../image/ram.jpg" alt="Memoria Netac Z RGB 2x16GB DDR5 7600Mhz CL36">
                 <h3>Memoria Netac Z RGB 2x16GB DDR5 7600Mhz CL36</h3>
                 <ul>
@@ -84,7 +89,7 @@
                     <li>36-46-46-122</li>
                     <li>1.5V, RGB</li>
                 </ul>
-                <button>Agregar al carrito</button>
+                <button type="button" class="btn btn-gradient">Comprar</button>
             </div>
         </section>
     </main>
@@ -97,11 +102,15 @@
             <div>
                 <a href="https://www.facebook.com/?locale=es_LA">facebook</a>
                 <a href="https://web.whatsapp.com/">whatsapp</a>
-                <button>Carrito</button>
             </div>
             <p>Copyright © Hardware Store. Todos los derechos reservados</p>
         </section>
     </footer>
+       <!--animacion-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+    </script>
      <!--bs-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

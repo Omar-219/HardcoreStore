@@ -6,6 +6,25 @@
   font-size: 20px;
 }
 
+.nav-bg-color {
+  background-color: rgb(138, 43, 226);
+}
+
+.btn-gradient {
+  background: linear-gradient(45deg, rgb(138, 43, 226) 0%, rgb(0, 255, 255) 100%);
+  border: none;
+  padding: 12px 35px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-size: 200% auto;
+  transition: 0.5s;
+}
+
+.btn-gradient:hover {
+  background-position: right center;
+  box-shadow: 8px 8px 10px black;
+}
+
 .background {
   background-image: url(../image/background.jpg);
   height: 500px;
@@ -15,13 +34,10 @@
   flex-direction: column;
   align-items: center;
 }
-.background .hardwarestore .nav-bg-color {
-  background: rgb(138, 43, 226);
-}
-.background .hardwarestore .nav-bg-color .icono {
+.background .hardwarestore .icono {
   height: 300px;
 }
-.background .hardwarestore .nav-bg-color .icono .titulo {
+.background .hardwarestore .titulo {
   text-align: center;
   color: rgb(0, 255, 255);
 }
@@ -36,19 +52,24 @@
   width: 30%;
   border-radius: 2rem;
   text-align: center;
+  box-shadow: 8px 8px 10px black;
 }
-.sub-titulo .bg-h2 .main-grid {
+
+.main-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 20px;
 }
-.sub-titulo .bg-h2 .main-grid .tarjeta {
+.main-grid .tarjeta {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2%;
+  background-color: rgb(230, 227, 227);
+  box-shadow: 8px 8px 10px black;
 }
-.sub-titulo .bg-h2 .main-grid .tarjeta .productos {
+.main-grid .tarjeta .productos {
   height: 350px;
   width: 350px;
 }
@@ -62,8 +83,9 @@
   height: 300px;
   text-align: center;
 }
-.footer .footer p {
-  color: #8a9597;
+
+.footer p {
+  color: rgb(230, 227, 227);
 }
 
 @media (max-width: 1150px) {

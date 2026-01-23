@@ -1,26 +1,32 @@
+@use '../utilities/variables';
+@use '../utilities/mixins' as*;
 .sub-titulo{
     display: flex;
     justify-content: center;
     margin: 25px;
     .bg-h2{
-        background-color: rgb(138, 43, 226);
+        background-color: variables.$color-bg;
         width: 30%;
         border-radius: 2rem;
         text-align: center;
-        .main-grid{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            padding: 20px;
-            .tarjeta{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .productos{
-                    height: 350px;
-                    width: 350px;
-                }
-            }
+        @include sombras;
+    }
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    .tarjeta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        background-color: variables.$color-fp;
+        @include sombras;
+        .productos{
+            height: 350px;
+            width: 350px;
         }
     }
 }
