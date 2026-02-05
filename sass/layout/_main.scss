@@ -6,7 +6,7 @@
     margin: 25px;
     .bg-h2{
         background-color: variables.$color-bg;
-        width: 30%;
+        padding: 20px;
         border-radius: 2rem;
         text-align: center;
         @include sombras;
@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 20px;
+    padding: 5%;
     .tarjeta{
         display: flex;
         flex-direction: column;
@@ -25,8 +25,36 @@
         background-color: variables.$color-fp;
         @include sombras;
         .productos{
-            height: 350px;
-            width: 350px;
+            height: 35%;
+            width: 90%;
+        }
+    }
+}
+.acordeon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .acordeon2{
+        width: 70%;
+    }
+}
+.carro{
+    display: flex;
+    .formulario1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+    }
+    .pedido{
+        background-color: variables.$color-fp;
+        border-radius: 2rem;
+        width: 50%;
+        margin: 20px;
+        padding: 20px;
+        @include sombras;
+        .compra{
+            margin-top: 20px;
         }
     }
 }

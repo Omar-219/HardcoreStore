@@ -1,0 +1,16 @@
+@media (max-width:1150px) {
+    .main-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .carro{
+        display: flex;
+        flex-direction: column;
+        .formulario1{
+            width: 90%;
+        }
+        .pedido{
+            width: 80%;
+        }
+    }
+}

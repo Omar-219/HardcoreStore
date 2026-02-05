@@ -49,7 +49,7 @@
 }
 .sub-titulo .bg-h2 {
   background-color: rgb(138, 43, 226);
-  width: 30%;
+  padding: 20px;
   border-radius: 2rem;
   text-align: center;
   box-shadow: 8px 8px 10px black;
@@ -59,7 +59,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 20px;
+  padding: 5%;
 }
 .main-grid .tarjeta {
   display: flex;
@@ -70,8 +70,38 @@
   box-shadow: 8px 8px 10px black;
 }
 .main-grid .tarjeta .productos {
-  height: 350px;
-  width: 350px;
+  height: 35%;
+  width: 90%;
+}
+
+.acordeon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.acordeon .acordeon2 {
+  width: 70%;
+}
+
+.carro {
+  display: flex;
+}
+.carro .formulario1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px;
+}
+.carro .pedido {
+  background-color: rgb(230, 227, 227);
+  border-radius: 2rem;
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 8px 8px 10px black;
+}
+.carro .pedido .compra {
+  margin-top: 20px;
 }
 
 .footer {
@@ -80,7 +110,7 @@
   align-items: center;
   justify-content: end;
   background-image: url(../image/background.jpg);
-  height: 300px;
+  height: 220px;
   text-align: center;
 }
 
@@ -92,6 +122,21 @@
   .main-grid {
     display: flex;
     flex-direction: column;
+  }
+  .carro {
+    display: flex;
+    flex-direction: column;
+  }
+  .carro .formulario1 {
+    width: 90%;
+  }
+  .carro .pedido {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .bg-h2 {
+    width: 60%;
   }
 }
 
