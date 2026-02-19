@@ -25,6 +25,9 @@
         background-color: variables.$color-fp;
         @include sombras;
         .productos{
+            @include sombras;
+            margin-bottom: 20px;
+            border-radius: 1rem;
             height: 35%;
             width: 90%;
         }
