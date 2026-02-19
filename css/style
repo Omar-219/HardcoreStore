@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -83,25 +82,6 @@
 .acordeon .acordeon2 {
   width: 70%;
 }
-.acordeon .acordeon2 .accordion-button {
-  position: relative;
-  padding-right: 40px;
-}
-.acordeon .acordeon2 .acordeon3 {
-  text-align: center;
-}
-.acordeon .acordeon2 .accordion-button::after {
-  content: "›";
-  position: absolute;
-  right: 20px;
-  font-size: 2rem;
-  transition: transform 0.3s ease;
-  transform: rotate(90deg);
-  color: rgb(2, 2, 2);
-}
-.acordeon .acordeon2 .accordion-button:not(.collapsed)::after {
-  transform: rotate(-90deg);
-}
 
 .carro {
   display: flex;
@@ -160,4 +140,4 @@
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.map */
